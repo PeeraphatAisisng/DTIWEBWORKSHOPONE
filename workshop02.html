@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAU HOTEL</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        table {
+            width: 60%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 120px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .buttons {
+            margin-top: 20px;
+            padding: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./image/img2.png" alt="SAU HOTEL" width="400">
+        <h2>SAU HOTEL</h2>
+        <h2>Register</h2>
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <td> ชื่อ-สกุล : </td>
+            <td> <input type="text"> </td>
+        </tr>
+        <tr>
+            <td> คำนำหน้า : </td>
+            <td>
+                <input type="radio" name="gender" value="Mr"> นาย
+                <input type="radio" name="gender" value="Mrs"> นาง
+                <input type="radio" name="gender" value="Ms"> นางสาว
+            </td>
+        </tr>
+        <tr>
+            <td> ประเภทห้อง : </td>
+            <td>
+                <select>
+                    <option value="standard">Standard Room (750 บาท/คืน)</option>
+                    <option value="superior">Superior Room (1,200 บาท/คืน)</option>
+                    <option value="deluxe">Deluxe Room (1,800 บาท/คืน)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> จำนวนคืนที่เข้าพัก : </td>
+            <td> <input type="number"> คืน </td>
+        </tr>
+        <tr>
+            <td> จำนวนคนที่เข้าพัก : </td>
+            <td> <input type="number"> คน </td>
+        </tr>
+        <tr>
+            <td> วันที่เข้าพัก : </td>
+            <td> <input type="date"> </td>
+        </tr>
+        <tr>
+            <td> Option : </td>
+            <td>
+                <input type="checkbox">อาหารเช้า <br>
+                <input type="checkbox">อาหารกลางวัน <br>
+                <input type="checkbox">อาหารเย็น
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="buttons">
+        <button>บันทึกข้อมูล</button>
+        <button>ยกเลิก</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Services</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            width: 50%;        
+            margin: auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            margin: auto;
+        }
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"], input[type="tel"], select {
+            width: 150px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .note {
+            color: red;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./image/img1.png" alt="Online Services" width="400">
+    <h2>Online Services V.1.0</h2>
+    <p>"ชำระค่าธารณูปโภคหลากหลายเพื่อความสะดวกของคุณ"</p>
+    <hr>
+
+    <table>
+        <tr>
+            <td>รหัสประจำตัวประชาชน :</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>คำนำหน้า :</td>
+            <td>
+                <input type="radio" name="gender" value="Mr"> นาย
+                <input type="radio" name="gender" value="Mrs"> นาง
+                <input type="radio" name="gender" value="Ms"> นางสาว
+            </td>
+        </tr>
+        <tr>
+            <td>ชื่อ - สกุล :</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <p style="text-align: center;">ชำระค่าธารณูปโภค</p>
+    <table>
+        <tr>
+            <td><input type="checkbox"> ประปา</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"> ไฟฟ้า</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+    </table>
+
+    <p style="text-align: center;">ชำระค่าโทรศัพท์</p>
+    <table>
+        <tr>
+            <td><input type="checkbox"> โทรศัพท์บ้าน</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"> AIS</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"> DTAC</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"> TRUE</td>
+            <td><input type="tel"> บาท</td>
+        </tr>
+    </table>
+
+    <p style="text-align: center;">ส่วนลดเฉพาะค่าธารณูปโภค</p>
+    <select>
+        <option>ไม่มีส่วนลด</option>
+        <option>5%</option>
+        <option>10%</option>
+    </select>
+
+    <div class="buttons">
+        <button>ชำระบริการ</button>
+        <button>ยกเลิก</button>
+    </div>
+    <hr>
+    <p class="note"><b>หมายเหตุ:</b> ค่าบริการคิด 15 บาทต่อรายการ โดยคิดเฉพาะการชำระค่าโทรศัพท์เท่านั้น</p>
+</div>
+
+</body>
+</html>
